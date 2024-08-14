@@ -1,0 +1,144 @@
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    padding: 15px;
+    margin-bottom: 5%;
+}
+
+#heading{
+    text-align: center;
+    color: #f4db7d;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 2% 0px;
+}
+
+#para{
+    margin: 2% 0px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 5px 10px rgba(17, 3, 218, 0.9);
+    border-radius: 10px ;
+}
+
+.card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.card h1{
+    margin: 10px;
+    font-size: 24px;
+    /* color: orange; */
+}
+
+.card p{
+    text-align: justify;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.stack{
+    margin: 10px;
+    display: flex;
+}
+
+.stack span{
+    font-weight: 600;
+}
+
+.stack p{
+    margin: 0% 10px;
+}
+
+.links img{
+    width: 15px;
+}
+
+.links{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    font-size: 13px;
+    color: #e8e8e8;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.links a *{
+    margin-inline: 5px;
+
+}
+
+.card {
+    position: relative;
+    color: white;
+    background: #090d24;
+    border-radius: 14px;
+  }
+  
+  .bg {
+    position: absolute;
+    z-index: -1;
+    inset: -4px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .uwu {
+    filter: blur(8px);
+    transition: filter 0.3s;
+  }
+  
+  .bg::before {
+    content: '';
+    position: absolute;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 50%;
+    min-width: 150%;
+    min-height: 150%;
+    background-image: conic-gradient(
+      hsl(0, 100%, 50%),
+      hsl(30, 100%, 50%),
+      hsl(60, 100%, 50%),
+      hsl(90, 100%, 50%),
+      hsl(120, 100%, 50%),
+      hsl(150, 100%, 50%),
+      hsl(180, 100%, 50%),
+      hsl(210, 100%, 50%),
+      hsl(240, 100%, 60%),
+      hsl(270, 100%, 50%),
+      hsl(300, 100%, 50%),
+      hsl(330, 100%, 50%),
+      hsl(360, 100%, 50%)
+    );
+    animation: speeen 4s linear infinite;
+    transform-origin: 0% 0%;
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  
+  @keyframes speeen {
+    from {
+      transform: rotate(0deg) translate(-50%, -50%);
+    }
+  
+    to {
+      transform: rotate(360deg) translate(-50%, -50%);
+    }
+  }
+  
